@@ -1,12 +1,17 @@
-let para = document.querySelector("#content");
-let btn = document.querySelector("button");
+let p = document.querySelector("#content");
 let input = document.querySelector("input");
-let data = input.value;
+let btn = document.querySelector("button");
 
-function addData(){
-  para.innerHTML = data;
+btn.addEventListener("click",()=>{
+  let data = input.value;
+  
+  p.innerHTML = data;
 
   input.value = "";
-}
+
+})
+
+
+
 
 
